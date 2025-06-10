@@ -27,12 +27,12 @@
             <div class="container">
                 <div class ="caixa">
                     <h2 style="color:white">Sistema de acesso</h2><hr>
-                    <form action="login.php">
+                    <form action="./views/login.php" method="post">
                         <h1></h1>
                         <input type="submit" value="Logar">
                         <h1></h1>
                     </form>
-                    <form action="cadastro.php">
+                    <form action="./views/cadastro.php" method="post">
                         <input type="submit" value="Cadastrar">                    
                     </form>
 
