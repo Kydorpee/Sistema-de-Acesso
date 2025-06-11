@@ -29,13 +29,13 @@
                 <div class ="caixa">
                     <h1 style = "color:white">Cadastro</h1><hr>
                     <section>
-                        <form action="acesso.php" method="get">
+                            <form action="acesso.php" method="post">
                             <br>
                             <label for="login"style = "color:white">Login</label><br>
-                            <input type="text" name="login" value=""><br>
+                            <input type="text" name="CaLogin" value=""><br>
                             <br>
                             <label for="senha" style="color:white">Senha</label><br>
-                            <input type="text" name="senha" value=""><br><br>
+                            <input type="text" name="CaSenha" value=""><br><br>
 
                             <input type="submit" value="Criar">
 

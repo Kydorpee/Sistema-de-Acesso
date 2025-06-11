@@ -12,16 +12,17 @@
     <?php
         $usuario =
         [
-            "login" => $_POST["login"],
+            "login" => $_GET["login"],
 
-            "senha" => $_POST["senha"]
+            "senha" => $_GET["senha"]
         ];
-
+      
         $validador = 
         [
-            "vaLogin" => "Pedro.Costa",
-            "vaSenha" => "123456"
+            "vaLogin" => $_POST["CaLogin"],
+            "vaSenha" => $_POST["CaSenha"]
         ];
+
 
         if ($usuario["login"]==$validador["vaLogin"]) {
             if ($usuario["senha"]==$validador["vaSenha"]) {
@@ -60,13 +61,14 @@
             <div class="caixa">
                 <h2> Status de acesso </h2><hr>
                 <p style="color: <?= $status = $logado == true ? "green":"red"; ?>">
-                     <?php 
+                    <?php 
             
                         if ($logado == true) {
                             echo "Você esta logado!";
                         }else {
                             echo "Você digitou o login ou senha errados! ";
                         };
+                        
 
                     ?>
                  </p>
